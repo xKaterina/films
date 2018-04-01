@@ -13,7 +13,7 @@ class CreateView(ListCreateAPIView):
 
 
     def get(self, request, *args, **kwargs):
-        # response = urllib.request.urlopen('http://www.omdbapi.com/?i=tt0816692&plot=full')
+        # response = urllib.request.urlopen('http://www.omdbapi.com/?i=tt0816692&plot=full&apikey=BanM3Pls')
         # print(response.read())
         return super().get(request, *args, **kwargs)
 
