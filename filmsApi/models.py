@@ -22,3 +22,10 @@ class Film(models.Model):
     def __str__(self):
         return self.title
 
+
+class Omdb(models.Model):
+    omdbId = models.CharField('omdbId',  max_length=50)
+    flag = models.BooleanField('flag')
+
+    def __str__(self):
+        return self.omdbId
